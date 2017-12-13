@@ -9,12 +9,7 @@ feature "User can visit root page locate stations" do
     end
 
     expect(current_path).to eq('/search')
-    expect(page).to have_css('.stations', count: 10)
-    expect(page).to have_content('Name:')
-    expect(page).to have_content('Address:')
-    expect(page).to have_content('Fuel Types:')
-    expect(page).to have_content('Distance:')
-    expect(page).to have_content('Access Times:')
+    expect(page).to have_content('Wells Fargo')
   end
 end
 
