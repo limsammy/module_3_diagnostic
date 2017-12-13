@@ -1,5 +1,7 @@
-<% @stations[:fuel_stations].each do |station| %>
   <ul>
-    <li><%= station[:station_name] %></li>
+<% @stations[:fuel_stations].each do |station| %>
+    <li>Name: <%= station[:station_name] %></li>
+    <li>Address: <%= station[:street_address] %></li>
+    <li>State: <%= station[:state] %></li>
 <% end %>
   </ul>
